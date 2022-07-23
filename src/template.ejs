@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The seven apex | Build website and Manage Business brands</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <style>
+        @font-face {
+    font-family: 'orbitron';
+    src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div id="body_cover">
+        <button id="menu">
+            <img src="./assets/images/menu-burger.png" alt="the menu icon displays that the menu is closed with color black" >
+            <!-- cancel button in white -->
+            <img src="./assets/images/menu-open.png" alt="the menu icon displays that the menu is open, with color white" sizes="" srcset="">
+        </button>
+        <nav id="navbar">
+             <ul>
+                 <li class="nav-links"><a href="#">About us</a> </li>
+                 <li class="nav-links"><a href="#"> Expertise</a></li>
+                 <li class="nav-links"><a href="#">Services </a> </li>
+                 <li class="nav-links"><a href="#">Cases </a></li>
+                 <li class="nav-links"><a href="#">Blogs </a> </li>
+                 <li class="nav-links"><a href="#">Company </a> </li>
+             </ul>
+         </nav>
+        <section id="first_view">
+           
+            <div class="button_position">
+                <a class="button"> Get in touch</a>
+            </div>
+            <div class="content orbitron">
+                <h1> 7 APEX Studio</h1>
+                <p> We bring Brands to life</p>
+                <p> We where ideas come to life</p>
+            </div>
+        </section>
+        <section id="sec_view">
+            <h2 class="title my-1"> Our Cases</h2>
+
+            <div class="cases_flex">
+                <!--  card casees -->
+               <%= require('./repetitive/cases.js') %>
+               <!--  card end -->
+            </div>
+            <a class="button" id="morecases">
+                see more cases
+            </a>
+        </section>
+        <section id="third_view">
+            <div class="button_position">
+                <a class="button"> Get in touch</a>
+            </div>
+            <div class="content">
+                <h2 class="title my-2"> Our Services</h2>
+                <div class="services">
+                    <div class="card">
+                        <svg  viewBox="0 0 293 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M122.362 182.46H49.4107V73.0342C49.4107 66.585 51.9726 60.3999 56.533 55.8396C61.0933 51.2792 67.2784 48.7173 73.7276 48.7173H219.629C226.079 48.7173 232.264 51.2792 236.824 55.8396C241.384 60.3999 243.946 66.585 243.946 73.0342V97.3512M25.0938 218.936H170.995" stroke="#7BFF66" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M219.629 206.777H219.751M170.996 111.941C170.996 103.88 178.254 97.3511 187.203 97.3511H252.056C261.005 97.3511 268.263 103.88 268.263 111.941V228.663C268.263 236.724 261.005 243.253 252.056 243.253H187.203C178.254 243.253 170.996 236.724 170.996 228.663V111.941Z" stroke="#7BFF66" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M148.966 101.012L160.21 112.256L148.966 123.499M120.858 101.012L109.615 112.256L120.858 123.499" stroke="#24FF00" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M231.723 153.568L241.397 163.242L231.723 172.917M207.536 153.568L197.862 163.242L207.536 172.917" stroke="#24FF00" stroke-width="4.04978" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="info">
+                                <h3 class="mb-1"> Web Developement</h3>
+                                <div>
+                                    Business website, School website, Shopping website, 
+                                    Banking website, Church website, Bitcoin website, Exam website, Website Management.
+                                    All kinds of website.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <svg viewBox="0 0 361 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M107.503 255.282C156.595 255.282 196.392 215.485 196.392 166.393C196.392 117.3 156.595 77.5029 107.503 77.5029C58.4103 77.5029 18.613 117.3 18.613 166.393C18.613 215.485 58.4103 255.282 107.503 255.282Z" stroke="#7BFF66" stroke-width="4.70651"/>
+                            <path d="M254.314 255.282C303.406 255.282 343.204 215.485 343.204 166.393C343.204 117.3 303.406 77.5029 254.314 77.5029C205.222 77.5029 165.424 117.3 165.424 166.393C165.424 215.485 205.222 255.282 254.314 255.282Z" stroke="#7BFF66" stroke-width="4.70651"/>
+                            <circle cx="178.615" cy="106.751" r="91.2429" stroke="#24FF00" stroke-width="4.70651" stroke-dasharray="6.88 6.88"/>
+                        </svg> 
+                        <div class="info">
+                            <h3 class="mb-1"> Design</h3>
+                            <div>
+                                UI design, UX design, Product design, Web design,
+                                Research, Usability testing. <br><br>
+                                <strong>Graphic</strong> : making ID cards, Banners, Event ticket, logo designs, Textbook cover, Business card.
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+
+        <section id="forth_view">
+            <h2 class="mb-2 big_t"> Who Are we ?</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque ipsa 
+                vero, mollitia exercitationem, sint repudiandae,
+                 error tempore illum repellendus nesciunt cumque quisquam soluta! Quidem dolore vero sint praesentium fugit!
+            </p>
+        </section>
+        <section id="fifth_view">
+            <h2 class="mb-1 title"> What are our clients saying?</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide">
+                        <div class="customer">
+                         <div>
+                            <img src="./assets/images/school.png" alt="" srcset="">
+                            <div class="user">
+                                <p> CNJOEONP</p>
+                                <p> CNONUEUPN </p>
+                            </div>
+                         </div>
+                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review">
+                       <div class="review_logo">
+                        <img src="./assets/images/tsa.png" alt="" srcset="">
+                       </div>
+                        <div class="customer">
+                            <img src="./assets/images/school.png" alt="" srcset="">
+                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review">
+                       <div class="review_logo">
+                        <img src="./assets/images/tsa.png" alt="" srcset="">
+                       </div>
+                        <div class="customer">
+                            <img src="./assets/images/school.png" alt="" srcset="">
+                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review">
+                       <div class="review_logo">
+                        <img src="./assets/images/tsa.png" alt="" srcset="">
+                       </div>
+                        <div class="customer">
+                            <img src="./assets/images/school.png" alt="" srcset="">
+                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                        </div>
+                    </div>
+                  </div>
+             
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </section>
+
+        <section id="sixth_view">
+            <div class="button_position">
+                <a class="button"> Get in touch </a>
+            </div>
+            <h2 class="my-2 title"> Our blogs</h2>
+            <div class="blogs mt-1">
+                <!-- blogs section -->
+                <%= require('./repetitive/getBlogs.js') %>
+                <!-- blogs section end -->
+            </div>
+            <a href="#" class="button nd">
+                View more blog post
+            </a>
+        </section>
+
+        <footer id="seventh_view">
+            <h2 class="my-1 title "> Let's talk</h2>
+            <div class="content">
+                <div class="contact">
+                    <a href="mailto:azukachukwuebuka07@gmail.com">
+                        thesevenapex@gmail.com
+                    </a>
+                    <a href="#"> +2349036442093</a>
+                    <p> Star times Estate, Ago palace lagos, Nigeria.</p>
+                </div>
+                <div class="fast-links">
+                    <h3> Quick Links</h3>
+                    <a href="#" id="clients"> Clients</a>
+                    <a href="#" id="clients"> Cases</a>
+                    <a href="#" id="clients"> About us</a>
+                    <a href="#" id="clients"> Contact us </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+</body>
+</html>

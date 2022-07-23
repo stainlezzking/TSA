@@ -1,0 +1,17 @@
+[
+   {
+       "url" : "./assets/images/school.png",
+       "title" : "Why schools need wesite",
+       "body" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maxime nisi accusamus cumque, labore blanditiis illo,Corrupti blanditiis illo non <span style='color:blue';>read!...</span>"
+   },
+   {
+    "url" : "./assets/images/branding.png",
+    "title" : "Why you need an aesthetic brand",
+    "body" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maxime nisi accusamus cumque, labore blanditiis illo,Corrupti blanditiis illo non <span style='color:blue';>read!...</span>"
+},
+{
+    "url" : "./assets/images/school.png",
+    "title" : "Importance of a school website",
+    "body" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maxime nisi accusamus cumque, labore blanditiis illo,Corrupti blanditiis illo non <span style='color:blue';>read!...</span>"
+}
+]

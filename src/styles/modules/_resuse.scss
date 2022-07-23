@@ -1,0 +1,68 @@
+
+@use './index' as *;
+
+// this one finds the index file and since the index file is exporting the variables it finds it
+@function opposite($prop) {
+    @if($prop == $black) {
+        @return $white;
+     }
+     @else{
+         @return $black
+     }
+}
+
+@mixin btn-big($prop){
+    width: 30vw;
+    background-color: $prop;
+    display: block;
+    padding: 2.5em 0;
+    text-align: center;
+    color : opposite($prop);
+    border : none;
+    font-family: 'orbitron';
+    cursor: pointer;
+    transition: background-color .2s ease-in, 
+    color .25s linear,
+    box-shadow .5s ease-out;
+    &:hover{
+        background-color: opposite($prop);
+        color: $prop ;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px 0px rgba(29, 28, 28, 0.39);
+    }
+    @media screen and (max-width : 750px) {
+        width : auto;
+        padding: 1.5rem 3rem;
+    }
+}
+
+%general_padding {
+    padding: 1rem ;
+}
+%grid_lines{
+    background-size: 15% 15%;
+    background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+
+    @media screen and (max-width : 500px){
+        background-size: 10vw 10vw;
+    }
+}
+
+
+$spaceamounts : (1,2,3,4);
+@each $space in $spaceamounts{
+    .my-#{$space} {margin : #{$space}rem 0 }
+    .mx-#{$space} {margin : 0 #{$space}rem }
+    .mb-#{$space} {margin-bottom : #{$space}rem }
+    .py-#{$space} {padding :  #{$space}rem 0 }
+    .px-#{$space} {padding : 0 #{$space}rem  }
+}
+
+// common css classes to  resuse
+.button_position{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

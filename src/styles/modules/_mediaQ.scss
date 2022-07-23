@@ -1,0 +1,115 @@
+
+@media screen and (max-width : 750px){
+    .big_t{
+        margin-bottom: 1rem;
+    }
+    #first_view{
+        .content{
+            h1{
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+    }
+    #sec_view{
+        .cases_flex{
+            flex-direction: column;
+            .card{
+                margin: 1rem 0;
+                width: 100%;
+                max-width: 300px;
+                &:nth-child(2n){
+                    align-self: end;
+                    margin: 1rem 0;
+                }
+                .card_body{
+                    h3{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    #third_view{
+        .content{
+            .services{
+                .card{
+                    padding: .5rem 1rem;
+                    svg{
+                        margin-bottom: 1rem;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+    #forth_view{
+        padding: 1rem 2rem;
+    }
+
+    footer#seventh_view{
+        padding: 2rem 1rem;
+        .content{
+            display: block;
+            padding: 0px;
+            .contact{
+                margin-bottom: 2rem;
+            }
+            h3{
+                padding: .7em 1.2em;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width : 500px){
+    .big_t{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    // mobile versions
+        #third_view{
+        .content{
+            .services{
+                .card{
+                    padding: .5rem .8rem;
+                    width: 100%;
+                    max-width: 300px;
+                    margin-bottom: 1.3rem;
+                    svg{
+                        margin-bottom: 1rem;
+                        width: 100%;
+                        height: auto;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    #forth_view{
+        padding: 2rem 1rem;
+    }
+    #fifth_view{
+        .customer{
+            display: block;
+            text-align: center;
+            img{
+                margin: 1rem auto;
+                max-width: 20vw;
+            }
+        }
+    }
+    #sixth_view{
+        .blogs{
+            .card{
+                   max-width: 350px;
+                   .card-image{
+                       height: 150px;
+                   }
+            }
+        }
+    }
+
+}
