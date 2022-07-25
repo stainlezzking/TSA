@@ -35,21 +35,10 @@
 </head>
 <body>
     <div id="body_cover">
-        <button id="menu">
-            <img src="./assets/images/menu-burger.png" alt="the menu icon displays that the menu is closed with color black" >
-            <!-- cancel button in white -->
-            <img src="./assets/images/menu-open.png" alt="the menu icon displays that the menu is open, with color white" sizes="" srcset="">
-        </button>
-        <nav id="navbar">
-             <ul>
-                 <li class="nav-links"><a href="#">About us</a> </li>
-                 <li class="nav-links"><a href="#"> Expertise</a></li>
-                 <li class="nav-links"><a href="#">Services </a> </li>
-                 <li class="nav-links"><a href="#">Cases </a></li>
-                 <li class="nav-links"><a href="#">Blogs </a> </li>
-                 <li class="nav-links"><a href="#">Company </a> </li>
-             </ul>
-         </nav>
+        <!-- this here is the nav -->
+        <%= require('./repetitive/nav') %>
+        <!-- ###### -->
+
         <section id="first_view">
            
             <div class="button_position">
@@ -140,39 +129,41 @@
                         </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="review">
-                       <div class="review_logo">
-                        <img src="./assets/images/tsa.png" alt="" srcset="">
-                       </div>
-                        <div class="customer">
-                            <img src="./assets/images/school.png" alt="" srcset="">
-                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                    <div class="customer">
+                     <div>
+                        <img src="./assets/images/school.png" alt="" srcset="">
+                        <div class="user">
+                            <p> CNJOEONP</p>
+                            <p> CNONUEUPN </p>
                         </div>
+                     </div>
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review">
-                       <div class="review_logo">
-                        <img src="./assets/images/tsa.png" alt="" srcset="">
-                       </div>
-                        <div class="customer">
-                            <img src="./assets/images/school.png" alt="" srcset="">
-                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-                        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer">
+                 <div>
+                    <img src="./assets/images/school.png" alt="" srcset="">
+                    <div class="user">
+                        <p> CNJOEONP</p>
+                        <p> CNONUEUPN </p>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review">
-                       <div class="review_logo">
-                        <img src="./assets/images/tsa.png" alt="" srcset="">
-                       </div>
-                        <div class="customer">
-                            <img src="./assets/images/school.png" alt="" srcset="">
-                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-                        </div>
-                    </div>
-                  </div>
-             
+                 </div>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="customer">
+             <div>
+                <img src="./assets/images/school.png" alt="" srcset="">
+                <div class="user">
+                    <p> CNJOEONP</p>
+                    <p> CNONUEUPN </p>
+                </div>
+             </div>
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
+            </div>
+        </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -194,25 +185,9 @@
             </a>
         </section>
 
-        <footer id="seventh_view">
-            <h2 class="my-1 title "> Let's talk</h2>
-            <div class="content">
-                <div class="contact">
-                    <a href="mailto:azukachukwuebuka07@gmail.com">
-                        thesevenapex@gmail.com
-                    </a>
-                    <a href="#"> +2349036442093</a>
-                    <p> Star times Estate, Ago palace lagos, Nigeria.</p>
-                </div>
-                <div class="fast-links">
-                    <h3> Quick Links</h3>
-                    <a href="#" id="clients"> Clients</a>
-                    <a href="#" id="clients"> Cases</a>
-                    <a href="#" id="clients"> About us</a>
-                    <a href="#" id="clients"> Contact us </a>
-                </div>
-            </div>
-        </footer>
+        <!-- footer section -->
+        <%=require('./repetitive/footer') %>
+        <!-- ###### -->
     </div>
    <!-- Swiper JS -->
    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

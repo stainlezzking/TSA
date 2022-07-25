@@ -270,6 +270,7 @@ body{
             gap: 1rem;
             margin: 0 auto;
             color: $white;
+            padding: 2rem 0;
             img{
                 display: block;
                 border-radius: 50%;
@@ -291,6 +292,11 @@ body{
             }
 
         }
+    }
+    // next and prev for the carousel
+    .swiper-button-next:after, 
+    .swiper-button-prev:after{
+        color: white;
     }
 
 #sixth_view{
@@ -403,6 +409,466 @@ footer#seventh_view{
     }
 }
 
-@import "./modules/mediaQ"
-// i want to use that design from king of photoshop
-// can copy images from the UI as svgs
+@import "./modules/mediaQ";
+
+// ABOUT PAGE SECTION STARTS HERE 
+
+section.about{
+    padding: 3rem 2rem;
+    &>h2{
+            margin-bottom: 0;
+            margin-top: 1rem;
+            color: $black;
+    }
+}
+section#first_view.about{
+    padding: 0 2.7rem;
+    background: $white;
+    min-height: 100vh;
+    h2{
+        margin-bottom: 0;
+        margin-top: 1rem;
+        color: $black;
+    }
+    .content{
+            align-items: start;
+            color: $bgGreen;
+            padding: 0 2rem;
+            .info{
+                width: 80%;
+                margin-left: auto;
+            }
+            h1{
+            font-size: 4rem;
+
+            }
+        h3{
+            margin: 0;
+            margin-left: auto;
+
+        }
+    }
+}
+.greendot{
+    position: relative;
+    padding-left: 20px;
+    &::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-color: $lightgreen;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 10px;
+    }
+}
+
+// another section
+#more{
+    @extend %white_grid_lines;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    & > div{
+        .info{
+            margin: 2rem 0;
+            color: $white;
+        }
+    padding: 0 3rem;
+        .code_design{
+            width: 80%;
+            margin-left: auto;
+            margin-top: 1rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+section#more2{
+    @extend %grid_lines;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    align-items: center;
+    padding: 3rem;
+    h2{
+        color: $bgGreen;
+        margin: 2rem 0;
+    }
+    & > div{
+    padding: 0 3rem;
+           
+        .code_design{
+            width: 80%;
+            margin-left: auto;
+            margin-top: 1rem;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            margin: 1.5rem 0px;
+            &::before{
+                top: 0;
+            }
+        }
+    }
+}
+
+#values{
+    padding: 2rem;
+    &>h2{
+        margin: 2rem 0;
+        color: $white;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: 0 auto;
+        li{
+            border: 2px solid $white;
+            width: 33.3%;
+            padding: 2rem 0 ;
+            color: $white;
+            list-style-type: none;
+           > div{
+                margin: 0 auto;
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                h3{
+                    color: darken($lightgreen, 20);
+                }
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+            }
+            img{
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+            h3{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+#contact-us{
+    @extend %grid_lines ;
+    color: darken($gray, 40);
+    min-height: 100vh;
+    background-color: $white;
+    label{
+        font-size: 1.5rem;
+        display: block;
+        margin: 1.3rem 0 ;
+    }
+    &>h2{
+        margin: 2rem 0;
+        color: $bgGreen;
+    }
+    form{
+        padding: 0 1rem;
+        max-width: 900px;
+        margin: 0 auto;
+        button{
+            @include btn-big($black);
+            background-color: $bgGreen;
+            margin-left: auto ;
+            margin-right: auto;
+        }
+    }
+    .group-input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .group{
+        width: 45%;
+    }
+    input{
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        padding: 1rem;
+    }
+    input, textarea{
+        border:none;
+        background-color: $gray;
+    }
+    input:focus, textarea:focus{
+        border: 2px solid $lightgreen;
+        box-shadow: none;
+        outline: none;
+    }
+    textarea{
+        width: 100%;
+        border-radius: 20px;
+        height: 30vh;
+        padding: 1.4rem;
+    }
+
+}
+// all section to be restyled has about class to use to target them
+
+// media queries for about
+@import './modules/AB_mediaQ';
+
+// ENNDDDDDDD ###########
+
+// EXPERTISE
+section#first_view.experience{
+    background-color: $bgGreen;
+    .content{
+        h1{
+            font-size: 3rem;
+            color: $white;
+        }
+    }
+    h2{ color : $white}
+    .button_position{
+        .button{
+           @include btn-big($white);
+           font-size: 1rem;
+        }
+    }
+}
+
+section#values.expertise{
+    background-color: $white;
+    ul {
+        li{
+            border-color: $bgGreen;
+            >div{
+                h3,div{
+                    color: $bgGreen;
+                }
+            }
+        }
+    }
+}
+
+section#sec_view.expertise{
+    a.button:first-child{
+        margin: 1rem 0;
+    }
+    
+}
+
+
+// EXPERIENCE MEDIA QUERY
+
+@media screen and (max-width: 750px){
+    section#first_view.experience{
+        background-color: $bgGreen;
+      .content{
+        h1{
+            font-size: 2rem;
+            color: $white;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 500px){
+    section#first_view.experience{
+        background-color: $bgGreen;
+        h2{
+            font-size: .8rem;
+        }
+      .content{
+         
+        h1{
+            font-size: 1.5rem;
+            color: $white;
+        }
+      }
+    }
+}
+
+// ALL BLOGS SECTION
+section#banner{
+    height: 70vh;
+    background-image: url('../images/blogs.jpg');
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        color: $white;
+    }
+    h1{
+        position: absolute;
+        color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+   
+}
+
+    #author{
+        padding: 1rem;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #F4FFED;
+        width: 100%;
+        max-width: 300px;
+        margin-top: -150px;
+        margin-left: auto;
+        z-index: 1;
+        .intro{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .profile{
+            font-size: 2rem;
+            border-radius: 50%;
+            background-color: $lightgreen;
+            padding: 1.5rem 1.8rem;
+            display: inline-block;
+            margin: 1rem auto;
+        }
+        form{
+            label{
+                display: block;
+                font-style: italic;
+                margin-bottom: .6rem;
+            }
+            input{
+                display: block;
+                background-color: white;
+                border-radius: 5px;
+                padding: .6rem 1rem;
+                width: 100%;
+                border: none;
+                margin: 1rem 0;
+            }
+            button{
+                @include btn-big($black);
+                width: 100%;
+            }
+        }
+    }
+@media screen and (max-width: 500px){
+    section#banner{
+        height: 50vh;
+    }
+    #sixth_view{
+        #author{
+            margin: -100px auto;
+        }
+    }
+}
+
+
+// BLOGPOST PAGE
+section#banner.blogPost{
+    height: 100vh;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogPosts{
+    #author{
+        margin-top: -70px;
+        .profile{
+        font-size: 2rem;
+        border-radius: 50%;
+        padding: 1rem 1.2rem;
+        display: inline-block;
+        max-width: 1200px;
+        margin: 1 auto;
+        img{
+            width: 80px;
+        }
+        }
+        .info{
+            p{
+                margin: .5rem 0px;
+                font-size: .9rem;
+            }
+        }
+      
+    }
+}
+
+.post{
+    padding: 2rem 1.5rem;
+    background-color: $white;
+    max-width: 900px;
+    margin: 1rem auto;
+    h2{
+        margin: 1rem 0 ;
+    }
+    p{
+    line-height: 30px;
+    }
+}
+#sixth_view.blogPost{
+    min-height: auto;
+    background: $white;
+}
+.blogPost.form{
+    background-color: $white;
+    padding: 2rem;
+    min-width: auto;
+    @extend %grid_lines ;
+        form{
+            h2{
+                margin-bottom: 1.4rem;
+                text-align: center;
+            }
+            padding: 1rem 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            input{
+                width: 100%;
+                display: block;
+                padding:  1.2rem;
+                background-color: $gray;
+                border: none;
+                &::focus{
+                    box-shadow: none;
+                    outline: none;
+                    border: 2px solid $lightgreen;
+                }
+            }
+            button{
+                @include btn-big($black);
+                margin: 1rem auto;
+            }
+        }
+}
+
+@media screen and (max-width: 500px){
+#sixth_view.blogPost #author {
+    margin: -100px auto;
+    margin-bottom: .4rem;
+    max-width: 250px;
+    .profile{
+        padding: .8rem;
+        img{
+            max-width: 60px;
+        }
+    }
+}
+}

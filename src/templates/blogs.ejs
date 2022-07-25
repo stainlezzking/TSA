@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <title>THE SEVEN APEX IS THE TOP WEBSITE AGENCY IN NIGERIA</title>
+
+    <style>
+        @font-face {
+            font-family: 'orbitron';
+            src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+            url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- this here is the nav -->
+    <%= require('./repetitive/nav') %>
+    <!-- ###### -->
+    
+    <section id="banner" class="orbitron">
+        <h3> Blogs ></h3>
+        <h1 > Passion Lead us here</h1>
+    </section>
+    <section id="sixth_view">
+        <div id="author">
+            <div class="intro">
+                stay tunned for news useful articles
+                from our content team right in your box
+            </div>
+            <div style="text-align: center;">
+                <div class="profile orbitron">
+                    7
+                </div>
+            </div>
+            <form action="">
+                <label for="email"></label>
+                <input type="text" id="email" value="write your Email">
+                <button
+                style="width: 100%;"
+                class="button"> Submit</button>
+            </form>
+        </div>
+        <h2 class="my-2 title"> All blogs</h2>
+        <div class="blogs mt-1">
+            <!-- blogs section -->
+            <%= require('./repetitive/getBlogs.js') %>
+            <!-- blogs section end -->
+             <!-- blogs section -->
+             <%= require('./repetitive/getBlogs.js') %>
+             <!-- blogs section end -->
+        </div>
+    </section>
+      <!-- footer section -->
+      <%=require('./repetitive/footer') %>
+      <!-- ###### -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <title>THE SEVEN APEX IS THE TOP WEBSITE AGENCY IN NIGERIA</title>
+
+    <style>
+        @font-face {
+            font-family: 'orbitron';
+            src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+            url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- this here is the nav -->
+    <%= require('./repetitive/nav') %>
+    <!-- ###### -->
+    <section id="first_view" class="about experience">
+           
+        <div class="button_position">
+            <a class="button"> Get in touch</a>
+        </div>
+        <h2 class="nav-header orbitron">
+            Experience
+        </h2>
+        <div class="content">
+            <h1 class="orbitron"> 
+               Our product thrives in shaping the 
+               product and services that improves the lives of
+               thousands every single day
+            </h1>
+            
+        </div>
+    </section>
+
+    <section id="values" class="expertise">
+        <ul class="grid-box mt-2">
+            <!-- values box -->
+            <%= require('./repetitive/expertise')%>
+        <!-- ###### -->
+       </ul>
+    </section>
+
+    <!-- cases section, duplicate of the index page -->
+    <section id="sec_view" class="expertise">
+        <div class="button_position">
+            <a class="button"> Get in touch</a>
+        </div>
+        <h2 class="title my-1"> Our Cases</h2>
+
+        <div class="cases_flex">
+            <!--  card casees -->
+           <%= require('./repetitive/cases.js') %>
+           <!--  card end -->
+        </div>
+        <a class="button" id="morecases">
+            see more cases
+        </a>
+    </section>
+  
+    <!-- small in page style to target the footer -->
+    <style>
+        footer#seventh_view{
+        background-color: white;
+        color:#7bff66;
+    }
+    footer#seventh_view h2, footer#seventh_view .content h3,
+    footer#seventh_view .content a{
+        color: #242D23;
+    }
+    </style>
+      <!-- footer section -->
+      <%=require('./repetitive/footer') %>
+      <!-- ###### -->
+</body>
+</html>

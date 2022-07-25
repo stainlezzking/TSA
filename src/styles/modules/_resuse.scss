@@ -50,6 +50,17 @@
     }
 }
 
+%white_grid_lines{
+    background-size: 15% 15%;
+    background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+
+    @media screen and (max-width : 500px){
+        background-size: 10vw 10vw;
+    }
+}
+
 
 $spaceamounts : (1,2,3,4);
 @each $space in $spaceamounts{
