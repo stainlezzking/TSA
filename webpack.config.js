@@ -1,9 +1,11 @@
 const path = require('path')
 const plugs = require('./webpack-plugins.js')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 module.exports = {
     mode : 'production',
-    plugins : plugs,
+    plugins : [new MiniCssExtractPlugin(),...plugs],
     output : {
         filename : 'main-[fullhash].js',
         path : path.resolve(__dirname,'dist'),
@@ -19,7 +21,7 @@ module.exports = {
         rules : [
             {
                 test : /\.(scss|css)$/i,
-                use : ['style-loader',{
+                use : [MiniCssExtractPlugin.loader,{
                     loader : 'css-loader',
                     options : {
                         url : false

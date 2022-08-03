@@ -82,6 +82,14 @@
     #sec_view{
         .cases_flex{
             .card{
+                .card_image{
+                    .image_hover{
+                        // i am adding the bg color here becaause safari is having a 
+                        // had recognizing when the iphone is hovering on this
+                        // and the button is had to recognize without the shade
+                            background-color: rgba(0,0,0,.2);
+                    }
+                }
                 .card_body{
                      h3{
                         font-size: 1.4em;
