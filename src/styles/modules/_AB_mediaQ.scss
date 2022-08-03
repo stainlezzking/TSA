@@ -10,16 +10,20 @@
     }
     section#first_view.about{
         padding: 0 1rem;
+       
         .content{
             .info{
                 width: 100%;
                 font-size: .8em;
                 line-height: 20px;
+                font-weight: normal;
+                text-align: start;
             }
             h1{
                 text-align: start;
                 font-size: 2rem;
             }
+            
         }
     }
     .greendot{
@@ -79,9 +83,14 @@
         padding: 1rem 0;
     }
     section#first_view.about{
+        .nav-header{
+            font-size: .9rem;
+        }
         .content{
             padding: 0;
-       
+            h1{
+                letter-spacing: normal;
+            }
         }
     }
     .greendot{

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <title> UI/UX designer in Lagos, Nigeria in Africa </title>
+    <meta name="description" content="The Seven Apex, We create aesthic modern web designs for all kinds of business or projects">
+    <meta property="og:description" content="The Seven Apex , We create aesthic modern web designs for all kinds of business or projects">
+    <!-- seo meta tags plus favicion -->
+    <%= require('../repetitive/seo-tags.js') %>
+
+    <style>
+        @font-face {
+            font-family: 'orbitron';
+            src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+            url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- preloader feature -->
+    <%= require('../repetitive/preloader.js') %>
+    <!-- ###### -->
+    <!-- this here is the nav -->
+    <%= require('../repetitive/nav') %>
+    <!-- ###### -->
+    <section id="first_view" class="webdev" style="height : auto;background-image: url('./assets/images/UI-UXdesign.png');">
+           
+        <div class="button_position">
+            <a class="button"> Get in touch</a>
+        </div>
+        <h2 class="nav-header orbitron">
+            UI Design | UX Design services
+        </h2>
+        <div class="content container">
+            <h1 class="orbitron"> 
+                We take care of user needs with the power of design
+            </h1>
+            <p class="info greendot">
+                We help businesses by delivering expert user experience consulting, research, and design services to create new products or improve existing ones. Our user-centered design vision helps us solve customer problems and spirit up your brand, your product, your services.
+            </p>
+        </div>
+    </section>
+
+    <section id="more2" class="bg-white webdev">
+        <div>
+            </div>
+            <section class="ux-design">
+                <h2 class="orbitron mb-2"> How we deliver UX and UI services</h2>
+                <div class="boxes container ">
+                    <div class="card-box">
+                       <div class="image-box">
+                        <img src="./assets/images/ux-3.png" alt="" srcset="">
+                        <h3 class="orbitron"> Reasearch &#8594; </h3>
+                       </div>
+                        <p>Our UX researchers talk to your team, study your product idea, and create a relevant strategy, precisely based on the demands of the business and customers.</p>
+                        <ul class="card-body">
+                                <li>UX research</li>
+                                <li>Competitive analysis</li>
+                                <li>Stakeholders interview</li>
+                                <li>User interview</li>
+                                <li>Customer Journey Mapping</li>
+                                <li>Design sprints services</li>
+                                <li>Product workshops</li>
+                            </ul>
+                    </div>
+                    <div class="card-box">
+                        <div class="image-box">
+                            <img src="./assets/images/ux-2.png" alt="" srcset="">
+                            <h3 class="orbitron"> Design &#8594; </h3>
+                        </div>
+                        <p>We design a user interface for every unique screen or page. The prototypes include animations, transitions, interactions, and adaptive design for various screen resolutions. </p>
+                        <ul class="card-body">
+                                <li>Information architecture</li>
+                                <li>User flows</li>
+                                <li>Wireframing</li>
+                                <li>UI Prototyping</li>
+                                <li>User interface design</li>
+                                <li>Frontend development</li>
+                            </ul>
+                    </div>
+                    <div class="card-box">
+                        <div class="image-box">
+                            <img src="./assets/images/ux-1.png" alt="" srcset="">
+                            <h3 class="orbitron"> Improve &#8594;</h3>
+                        </div>
+                        <p>In order to get the most from your website or mobile app, we can help you detect the pain points and critical issues and make UX and UI design improvements.</p>
+                        <ul class="card-body">
+                                <li>Heuristic evaluation</li>
+                                <li>UX audit</li>
+                                <li>Usability testing</li>
+                                <li>Quality assurance</li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="ux-companies" class="ux-design"> 
+        <h2 class="orbitron mb-2">Types of Companies we can help</h2>
+        <div class="boxes container">
+            <div class="card-box">
+                <div class="image-box">
+                    <img src="./assets/images/ui-comp3.png" alt="" srcset="">
+                    <h3 class="orbitron"> Start-ups &#8594;</h3>
+                </div>
+                <p>We provide a full cycle of UX/UI design services for new websites and mobile apps. Our team can also do research, prove your product concept, and build an MVP.
+                </p>
+            </div>
+            <div class="card-box">
+                <div class="image-box">
+                    <img src="./assets/images/ui-comp2.png" alt="" srcset="">
+                    <h3 class="orbitron"> Existing projects &#8594;</h3>
+                </div>
+                <p>We can start with the UX audit and heuristic evaluation and spot the pain points of a website or pick up your product at any of the development stages and complete the flow.
+                </p>
+            </div>
+            <div class="card-box">
+                <div class="image-box">
+                    <img src="./assets/images/ui-comp1.png" alt="" srcset="">
+                    <h3 class="orbitron"> IT companies &#8594; </h3>
+                </div>
+                <p>If you lack in-house knowledge or need UX expertise on your team, we are here for you with a fully packed team of designers available the whole day or a couple of hours a day.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us form -->
+    <%= require('../repetitive/contactform') %>
+    <!-- ######## -->
+
+      <!-- footer section -->
+      <%=require('../repetitive/footer') %>
+      <!-- ###### -->
+</body>
+</html>

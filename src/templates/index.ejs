@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> The seven apex | Build website and Manage Business brands</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <title> The seven apex | We Build website and Manage Business brands designs</title>
     <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
-    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <meta name="description" content="The Seven Apex is a top Web Development agency in Nigeria that builds website for businesses and individuals">
+    <meta property="og:description" content="The Seven Apex, we build website for businesses and individuals and we manage brand designs">
+    <!-- seo meta tags plus favicion -->
+    <%= require('./repetitive/seo-tags.js') %>
+    <!-- ######## -->
+
+    <!-- this is the reviews carousel link, disabled for now -->
       <!-- Link Swiper's CSS -->
-      <link
+      <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    /> -->
     <style>
         @font-face {
     font-family: 'orbitron';
@@ -19,12 +24,13 @@
          url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .swiper {
         width: 100%;
         height: 100%;
+        max-width: 1000px;
+        padding: 1rem 0px;
       }
 
 .swiper-wrapper{
@@ -33,7 +39,8 @@
 }
     </style>
 </head>
-<body>
+<body style="position: relative;">
+    <%= require('./repetitive/preloader.js') %>
     <div id="body_cover">
         <!-- this here is the nav -->
         <%= require('./repetitive/nav') %>
@@ -42,12 +49,41 @@
         <section id="first_view">
            
             <div class="button_position">
-                <a class="button"> Get in touch</a>
+                <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
             </div>
             <div class="content orbitron">
                 <h1> 7 APEX Studio</h1>
-                <p> We bring Brands to life</p>
-                <p> We where ideas come to life</p>
+                <p>
+                    Our services has a proven record of <span style="color: #198754;">83%</span> increase in business reach,
+                     turnover and commensurate profit. We are driven by a desire to give clients 
+                     maximum value for their branding investments,
+                     helping their businesses reach its full potential as a result.
+                </p>
+            </div>
+        </section>
+        <section id="forth_view">
+            <h2 class="mb-2 big_t"> Who Are we ?</h2>
+            <p>
+                We are The Seven Apex. <br>
+                A team of highly skilled creative developers, 
+                who offer solutions that give businesses online
+                presence and create a future-proof brand identity,
+                thereby increasing their reach and appeal
+                respectivelyely.
+            </p>
+        </section>
+        <section id="third_view">
+            <div class="button_position">
+                <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
+            </div>
+            <div class="content">
+                <h2 class="title my-2"> Our Services</h2>
+                <div class="services">
+                 <!-- services inport -->
+                 <%= require('./repetitive/services.js') %>
+                 <!-- #### -->
+                </div>
+                    
             </div>
         </section>
         <section id="sec_view">
@@ -58,60 +94,12 @@
                <%= require('./repetitive/cases.js') %>
                <!--  card end -->
             </div>
-            <a class="button" id="morecases">
+            <a href="./expertise.html#sec_view" target="_blank" class="button" id="morecases">
                 see more cases
             </a>
         </section>
-        <section id="third_view">
-            <div class="button_position">
-                <a class="button"> Get in touch</a>
-            </div>
-            <div class="content">
-                <h2 class="title my-2"> Our Services</h2>
-                <div class="services">
-                    <div class="card">
-                        <svg  viewBox="0 0 293 292" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M122.362 182.46H49.4107V73.0342C49.4107 66.585 51.9726 60.3999 56.533 55.8396C61.0933 51.2792 67.2784 48.7173 73.7276 48.7173H219.629C226.079 48.7173 232.264 51.2792 236.824 55.8396C241.384 60.3999 243.946 66.585 243.946 73.0342V97.3512M25.0938 218.936H170.995" stroke="#7BFF66" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M219.629 206.777H219.751M170.996 111.941C170.996 103.88 178.254 97.3511 187.203 97.3511H252.056C261.005 97.3511 268.263 103.88 268.263 111.941V228.663C268.263 236.724 261.005 243.253 252.056 243.253H187.203C178.254 243.253 170.996 236.724 170.996 228.663V111.941Z" stroke="#7BFF66" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M148.966 101.012L160.21 112.256L148.966 123.499M120.858 101.012L109.615 112.256L120.858 123.499" stroke="#24FF00" stroke-width="4.70651" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M231.723 153.568L241.397 163.242L231.723 172.917M207.536 153.568L197.862 163.242L207.536 172.917" stroke="#24FF00" stroke-width="4.04978" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <div class="info">
-                                <h3 class="mb-1"> Web Developement</h3>
-                                <div>
-                                    Business website, School website, Shopping website, 
-                                    Banking website, Church website, Bitcoin website, Exam website, Website Management.
-                                    All kinds of website.
-                                </div>
-                            </div>
-                    </div>
-                    <div class="card">
-                        <svg viewBox="0 0 361 274" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M107.503 255.282C156.595 255.282 196.392 215.485 196.392 166.393C196.392 117.3 156.595 77.5029 107.503 77.5029C58.4103 77.5029 18.613 117.3 18.613 166.393C18.613 215.485 58.4103 255.282 107.503 255.282Z" stroke="#7BFF66" stroke-width="4.70651"/>
-                            <path d="M254.314 255.282C303.406 255.282 343.204 215.485 343.204 166.393C343.204 117.3 303.406 77.5029 254.314 77.5029C205.222 77.5029 165.424 117.3 165.424 166.393C165.424 215.485 205.222 255.282 254.314 255.282Z" stroke="#7BFF66" stroke-width="4.70651"/>
-                            <circle cx="178.615" cy="106.751" r="91.2429" stroke="#24FF00" stroke-width="4.70651" stroke-dasharray="6.88 6.88"/>
-                        </svg> 
-                        <div class="info">
-                            <h3 class="mb-1"> Design</h3>
-                            <div>
-                                UI design, UX design, Product design, Web design,
-                                Research, Usability testing. <br><br>
-                                <strong>Graphic</strong> : making ID cards, Banners, Event ticket, logo designs, Textbook cover, Business card.
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-                    
-            </div>
-        </section>
-
-        <section id="forth_view">
-            <h2 class="mb-2 big_t"> Who Are we ?</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque ipsa 
-                vero, mollitia exercitationem, sint repudiandae,
-                 error tempore illum repellendus nesciunt cumque quisquam soluta! Quidem dolore vero sint praesentium fugit!
-            </p>
-        </section>
+<!-- section for Reviewws... muted this plus the carousel link and styles -->
+<!--         
         <section id="fifth_view">
             <h2 class="mb-1 title"> What are our clients saying?</h2>
             <div class="swiper mySwiper">
@@ -168,11 +156,11 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
-        </section>
-
+        </section> -->
+<!-- ####### Reviews ending ####### -->
         <section id="sixth_view">
             <div class="button_position">
-                <a class="button"> Get in touch </a>
+                <a href="https://wa.me/message/EGWYLEIIIRY6I1" class="button"> Get in touch </a>
             </div>
             <h2 class="my-2 title"> Our blogs</h2>
             <div class="blogs mt-1">
@@ -180,7 +168,7 @@
                 <%= require('./repetitive/getBlogs.js') %>
                 <!-- blogs section end -->
             </div>
-            <a href="#" class="button nd">
+            <a href="./blogs.html" class="button nd">
                 View more blog post
             </a>
         </section>
@@ -190,9 +178,9 @@
         <!-- ###### -->
     </div>
    <!-- Swiper JS -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-   <!-- Initialize Swiper -->
+  //- Initialize Swiper 
    <script>
      var swiper = new Swiper(".mySwiper", {
        navigation: {
@@ -200,6 +188,6 @@
          prevEl: ".swiper-button-prev",
        },
      });
-   </script>
+   </script> -->
 </body>
 </html>

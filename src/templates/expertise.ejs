@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
-    <title>THE SEVEN APEX IS THE TOP WEBSITE AGENCY IN NIGERIA</title>
-
+    <title>The Seven Apex are experts in building all kinds of website</title>
+    <meta name="description" content="We build all kinds of website at The Seven Apex, school website, church Website, Exam platforms, business website">
+    <meta property="og:description" content="We are experts in building banking sites, Exam platforms for schools, school websites, church websites">
+    <!-- seo meta tags plus favicion -->
+    <%= require('./repetitive/seo-tags.js') %>
+    <!-- ######## -->
     <style>
         @font-face {
             font-family: 'orbitron';
@@ -18,13 +21,17 @@
     </style>
 </head>
 <body>
+    <!-- preloader import -->
+    <%= require('./repetitive/preloader.js') %>
+    <!-- ########## -->
+    
     <!-- this here is the nav -->
     <%= require('./repetitive/nav') %>
     <!-- ###### -->
     <section id="first_view" class="about experience">
            
         <div class="button_position">
-            <a class="button"> Get in touch</a>
+            <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
         </div>
         <h2 class="nav-header orbitron">
             Experience
@@ -33,7 +40,7 @@
             <h1 class="orbitron"> 
                Our product thrives in shaping the 
                product and services that improves the lives of
-               thousands every single day
+               thousands, every single day
             </h1>
             
         </div>
@@ -50,7 +57,7 @@
     <!-- cases section, duplicate of the index page -->
     <section id="sec_view" class="expertise">
         <div class="button_position">
-            <a class="button"> Get in touch</a>
+            <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
         </div>
         <h2 class="title my-1"> Our Cases</h2>
 
@@ -59,9 +66,6 @@
            <%= require('./repetitive/cases.js') %>
            <!--  card end -->
         </div>
-        <a class="button" id="morecases">
-            see more cases
-        </a>
     </section>
   
     <!-- small in page style to target the footer -->

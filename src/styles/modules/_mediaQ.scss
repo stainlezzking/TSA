@@ -9,6 +9,10 @@
                 font-size: 3em;
                 text-align: center;
             }
+            p{
+                font-size: 1rem;
+                
+            }
         }
     }
     #sec_view{
@@ -25,6 +29,9 @@
                 .card_body{
                     h3{
                         font-size: 16px;
+                    }
+                    p{
+                        line-height: 1.5rem;
                     }
                 }
             }
@@ -49,6 +56,7 @@
 
     footer#seventh_view{
         padding: 2rem 1rem;
+       
         .content{
             display: block;
             padding: 0px;
@@ -64,18 +72,40 @@
 }
 
 @media screen and (max-width : 500px){
+    .container{
+        max-width: 100%;
+    }
     .big_t{
         font-size: 2rem;
         letter-spacing: 2px;
+    }
+    #sec_view{
+        .cases_flex{
+            .card{
+                .card_body{
+                     h3{
+                        font-size: 1.4em;
+                        letter-spacing: normal;
+                        font-weight: bold;
+                     }
+                     p{
+                         line-height: 1.3rem;
+                     }
+                }
+                &:nth-child(2n){
+                    align-self: unset;
+                }
+            }
+        }
     }
     // mobile versions
         #third_view{
         .content{
             .services{
                 .card{
-                    padding: .5rem .8rem;
+                    padding: 1rem .8rem;
                     width: 100%;
-                    max-width: 300px;
+                    max-width: 320px;
                     margin-bottom: 1.3rem;
                     svg{
                         margin-bottom: 1rem;
@@ -95,6 +125,7 @@
         .customer{
             display: block;
             text-align: center;
+            width: 100%;
             img{
                 margin: 1rem auto;
                 max-width: 20vw;
@@ -103,6 +134,7 @@
     }
     #sixth_view{
         .blogs{
+            padding: 0 1rem;
             .card{
                    max-width: 350px;
                    .card-image{

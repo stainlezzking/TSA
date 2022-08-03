@@ -8,12 +8,12 @@ module.exports = `
 </button>
 <nav id="navbar">
  <ul>
-     <li class="nav-links"><a href="#">About us</a> </li>
-     <li class="nav-links"><a href="#"> Expertise</a></li>
-     <li class="nav-links"><a href="#">Services </a> </li>
-     <li class="nav-links"><a href="#">Cases </a></li>
-     <li class="nav-links"><a href="#">Blogs </a> </li>
-     <li class="nav-links"><a href="#">Company </a> </li>
+ <li class="nav-links"><a href="/">Home</a> </li>
+     <li class="nav-links"><a href="./about.html">About us</a> </li>
+     <li class="nav-links"><a href="./expertise.html"> Expertise</a></li>
+     <li class="nav-links"><a href="./index.html#third_view">Services </a> </li>
+     <li class="nav-links"><a href="./index.html#sec_view">Cases </a></li>
+     <li class="nav-links"><a href="./blogs.html">Blogs </a> </li>
  </ul>
 </nav>
 `

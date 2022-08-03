@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
-    <title>THE SEVEN APEX IS THE TOP WEBSITE AGENCY IN NIGERIA</title>
-
+    <title>The Seven Apex Blogs | Why your business needs an online presence</title>
+    <meta name="description" content="The 7 Apex, We help grow your brand, business and institutions, we bring in the latest trend in technology in boosting your business">
+    <meta property="og:description" content="The 7 Apex, we help your business grow using latest trends in technology">
+    <!-- seo meta tags plus favicion -->
+    <%= require('./repetitive/seo-tags.js') %>
+    <!-- ######## -->
     <style>
         @font-face {
             font-family: 'orbitron';
@@ -18,11 +21,14 @@
     </style>
 </head>
 <body>
+     <!-- preloader feature -->
+     <%= require('./repetitive/preloader.js') %>
+     <!-- ###### -->
     <!-- this here is the nav -->
     <%= require('./repetitive/nav') %>
     <!-- ###### -->
     
-    <section id="banner" class="orbitron">
+    <section id="banner" class="orbitron" style="background-image: url('./assets/images/blogs.jpg');">
         <h3> Blogs ></h3>
         <h1 > Passion Lead us here</h1>
     </section>
@@ -37,7 +43,8 @@
                     7
                 </div>
             </div>
-            <form action="">
+            <!-- this is email update subscbe section -->
+            <form >
                 <label for="email"></label>
                 <input type="text" id="email" value="write your Email">
                 <button
@@ -50,9 +57,7 @@
             <!-- blogs section -->
             <%= require('./repetitive/getBlogs.js') %>
             <!-- blogs section end -->
-             <!-- blogs section -->
-             <%= require('./repetitive/getBlogs.js') %>
-             <!-- blogs section end -->
+        
         </div>
     </section>
       <!-- footer section -->

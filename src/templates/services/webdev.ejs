@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <title>Build Modern Website for your business, institution or company </title>
+    <meta name="description" content="We build modern website for all kinds of business, shopping website, school website, church website, we are located in Lagos, Nigeria.">
+    <meta property="og:description" content="We build all kinds of website, shopping, business, company, school or church website">
+    <!-- seo meta tags plus favicion -->
+    <%= require('../repetitive/seo-tags.js') %>
+    <style>
+        @font-face {
+            font-family: 'orbitron';
+            src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+            url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- preloader feature -->
+    <%= require('../repetitive/preloader.js') %>
+    <!-- ###### -->
+    <!-- this here is the nav -->
+    <%= require('../repetitive/nav') %>
+    <!-- ###### -->
+    <section id="first_view" class="webdev " style="background-image: url('./assets/images/devices.png');">
+           
+        <div class="button_position">
+            <a class="button"> Get in touch</a>
+        </div>
+        <h2 class="nav-header orbitron">
+            Web Development Services
+        </h2>
+        <div class="content container">
+            <h1 class="orbitron"> We will deliver</h1>
+            <p class="info greendot">
+                We know how to reach your business goals with beautiful, 
+                fast and secure web applications. We deliver custom web development
+                using high level programming languages like javascript, and top CMS builders.
+            </p>
+        </div>
+    </section>
+
+    <section id="more" class="about webdev">
+        <div>
+            <h2 class="big_t">
+                Web app structure and stacks
+            </h2>
+            <h3 class="info greendot">
+                We provide full-cycle of product development, from consulting and planning to web design/development and QA. We also deliver any of the web development services separately, as needed.
+            </h3>
+            <div class="code_design">
+                <img src="./assets/images/stack.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <section id="more2" class="bg-white webdev">
+        <div>
+        
+            <div>
+                <h2 class="orbitron mb-2"> We are experts in</h2>
+                <div class="container">
+                    <p class="greendot"> Saas, Paas, B2B business / company websites</p>
+                    <p class="greendot">Banking websites</p>
+                    <p class="greendot"> School / learning institiute website</p>
+                    <p class="greendot">Exam/ CBT platforms</p>
+                    <p class="greendot">Online / e-commerce marketplace</p>
+                    <p class="greendot">Church / religious institution websites</p>
+                    <p class="greendot"> Crypto wallet /NFT landing pages </p>
+                    <p class="greendot">Redesign and Manage existing websites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us form -->
+    <%= require('../repetitive/contactform') %>
+    <!-- ######## -->
+
+      <!-- footer section -->
+      <%=require('../repetitive/footer') %>
+      <!-- ###### -->
+</body>
+</html>

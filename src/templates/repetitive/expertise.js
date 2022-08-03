@@ -1,27 +1,27 @@
 let arr = [
     {
-        title : 'Real Estate',
-        body : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugitquidem maiores dolore, placeat dignissimos quisquam quos eum illo magni?',
-        url : './assets/images/expertise-1.png'
-    },
-    {
         title : 'E-learning',
-        body : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugitquidem maiores dolore, placeat dignissimos quisquam quos eum illo magni?',
+        body : 'Online training, learning management systems and web apps',
         url : './assets/images/expertise-2.png'
     },
     {
         title : 'E-commerce',
-        body : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugitquidem maiores dolore, placeat dignissimos quisquam quos eum illo magni?',
+        body : 'Online stores, retail marketplace and ecommerce startups',
         url : './assets/images/expertise-3.png'
     },
     {
+        title : 'Real Estate',
+        body : 'Smart buildings, digital twins and real estate app development',
+        url : './assets/images/expertise-1.png'
+    },
+    {
         title : 'Healthcare',
-        body : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugitquidem maiores dolore, placeat dignissimos quisquam quos eum illo magni?',
+        body : 'Clinical & workforce management and telehealth solutions.',
         url : './assets/images/expertise-4.png'
     },
     {
         title : 'Travel',
-        body : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugitquidem maiores dolore, placeat dignissimos quisquam quos eum illo magni?',
+        body : 'Solutions for tour operators and travel agencies and corperate clients.',
         url : './assets/images/expertise-5.png'
     },
   

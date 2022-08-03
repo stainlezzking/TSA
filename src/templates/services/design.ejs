@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
+    <title> Brand and Prints Management design Agency in Nigeria </title>
+    <meta name="description" content="We manage brand designs, we create logo's, ID cards, flyers, banners and all kinds of prints for businesses">
+    <meta property="og:description" content="We manage brand designs, we create logo's, ID cards, flyers, banners and all kinds of prints for businesses">
+    <!-- seo meta tags plus favicion -->
+    <%= require('../repetitive/seo-tags.js') %>
+
+    <style>
+        @font-face {
+            font-family: 'orbitron';
+            src: url('./assets/fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+            url('./assets/fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- preloader feature -->
+    <%= require('../repetitive/preloader.js') %>
+    <!-- ###### -->
+    <!-- this here is the nav -->
+    <%= require('../repetitive/nav') %>
+    <!-- ###### -->
+    <section id="first_view" class="webdev" style="  background-image: url('./assets/images/design.png');">
+           
+        <div class="button_position">
+            <a class="button"> Get in touch</a>
+        </div>
+        <h2 class="nav-header orbitron">
+            Business Branding Services
+        </h2>
+        <div class="content container">
+            <h1 class="orbitron"> 
+                We help brands tell their story
+            </h1>
+            <p class="info greendot">
+                We uncover insights and shape brands through a process of exploration and investigation. We design to simplify. We are fostering a human-centric ideology to achieve lasting solutions. Backed by modern technologies. We build products that improve functionality, stay reliable, and evolve with time.
+                Like the world around us and the businesses we work with, our design practice is always striving to improve.
+            </p>
+        </div>
+    </section>
+
+    <section id="more2" class="bg-white webdev">
+        <div>
+            <div>
+                <h2 class="orbitron mb-2"> We are experts in</h2>
+            <div class="container">
+                <p class="greendot"> Standard Logos for your online business, companies and startup</p>
+                <p class="greendot">Professional Business card</p>
+                <p class="greendot"> ID cards </p>
+                <p class="greendot">Banners, Palmflets, Flyers design and prints</p>
+                <p class="greendot">Book cover design and prints </p>
+                <p class="greendot">Digital music covers </p>
+                <p class="greendot"> Event tickets design and prints </p>
+                <p class="greendot">We help run online google and facebook Ads’ for your brand</p> 
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us form -->
+    <%= require('../repetitive/contactform') %>
+    <!-- ######## -->
+
+      <!-- footer section -->
+      <%=require('../repetitive/footer') %>
+      <!-- ###### -->
+</body>
+</html>

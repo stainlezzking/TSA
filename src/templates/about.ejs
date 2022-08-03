@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/tsa.png" type="image/x-icon">
-    <title>THE SEVEN APEX IS THE TOP WEBSITE AGENCY IN NIGERIA</title>
-
+    <title>The Seven Apex is the Biggest Web Development and Brand Mangement Agency in Nigeria</title>
+    <meta name="description" content="The Seven Apex is a top Web Development agency in Nigeria that builds website for businesses and individuals and manage their brand designs">
+    <meta property="og:description" content="The Seven Apex is a top Web Development agency in Nigeria that builds website for businesses and individuals and manage their brand designs">
+    <!-- seo meta tags plus favicion -->
+    <%= require('./repetitive/seo-tags.js') %>
+    <!-- ######## -->
     <style>
         @font-face {
             font-family: 'orbitron';
@@ -18,24 +21,27 @@
     </style>
 </head>
 <body>
+     <!-- preloader feature -->
+     <%= require('./repetitive/preloader.js') %>
+     <!-- ###### -->
     <!-- this here is the nav -->
     <%= require('./repetitive/nav') %>
     <!-- ###### -->
     <section id="first_view" class="about ">
            
         <div class="button_position">
-            <a class="button"> Get in touch</a>
+            <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
         </div>
         <h2 class="nav-header orbitron">
             About us
         </h2>
         <div class="content">
             <h1 class="orbitron"> Hi there, we are the 7 Apex</h1>
-            <h3 class="info greendot">
+            <p class="info greendot">
                 we are a fullstack web development and design company,
                 with experience managing business brands, helping businesses
                 reach their wider audience and creating a brand image that resonates well with their targets.
-            </h3>
+            </p>
         </div>
     </section>
 
@@ -60,10 +66,9 @@
               We build web solutions that tell a brand story.
             </h2>
             <h3 class="info greendot">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt vel aut alias, molestiae totam quis mollitia quibusdam,
-                laborum eos quasi, impedit similique.
-                Veniam ad saepe, quod pariatur inventore ratione rem?
+                We develop web and mobile products with amazing interfaces and well-thought digital design concepts.
+                 We look into products in a broader sense: bigger, more efficient, focused on the user.
+
             </h3>
             <div class="code_design">
                 <img src="./assets/images/solutions.png" alt="" srcset="">
@@ -72,8 +77,8 @@
                 <h2 class="orbitron mb-2"> Our capability</h2>
                 <p class="greendot"> Brand Management</p>
                 <p class="greendot">Front-end Development</p>
+                <p class="greendot">Back-end Development</p>
                 <p class="greendot"> UI/UX design</p>
-                <p class="greendot">Content writing</p>
             </div>
         </div>
     </section>
@@ -87,34 +92,9 @@
            </ul>
     </section>
 
-    <section id="contact-us" class="about">
-        <h2 class="big_t"> Contact us</h2>
-
-        <form method="GET">
-            <div class="group-input">
-                <div style="width: 100%;">
-                    <label for="subject" class="mb-1"> *subject </label>
-                    <input type="text" placeholder="Start a project">
-                </div>
-            </div>
-            <div class="group-input">
-                <div class="group">
-                    <label for="subject" class="mb-1"> *subject </label>
-                    <input type="text" placeholder="Start a project">
-                </div>
-                <div class="group">
-                    <label for="subject" class="mb-1"> *Company name </label>
-                    <input type="text" placeholder="Start a project">
-                </div>
-            </div>
-            <div class="my-2">
-                <label for="body" class="mb-1"> message</label>
-                <textarea name="body" id="body">
-                </textarea>
-            </div>
-            <button> Send</button>
-        </form>
-    </section>
+    <!-- contact us form -->
+    <%= require('./repetitive/contactform') %>
+    <!-- ######## -->
 
       <!-- footer section -->
       <%=require('./repetitive/footer') %>

@@ -5,10 +5,14 @@
 body{
     background-color: $bgGreen;
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     .orbitron {
         font-family: 'orbitron';
+        color : $black;
     }
+    color : #333333;
+
+    
     button#menu{
         position: fixed;
         z-index: 11;
@@ -82,6 +86,10 @@ body{
     }
 }
 
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 #first_view{
     margin: 0 auto;
@@ -103,6 +111,14 @@ body{
             font-size: 5em;
             letter-spacing: 5px;
             color: $bgGreen;
+        }
+        p{
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.5rem;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
         }
     }
     .button_position{
@@ -132,6 +148,7 @@ body{
 
 #sec_view{
     @extend %general_padding ;
+    @extend %white_grid_lines;
     color: $white;
 
     a.button{
@@ -185,7 +202,8 @@ body{
             }
             .card_body{
                 h3{
-                    letter-spacing: 4px;
+                    letter-spacing: 1px;
+                    color: $white;
                 }
             }
             img {
@@ -201,7 +219,6 @@ body{
     @extend %general_padding ;
     @extend %grid_lines;
     background-color: $white;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     a.button{
@@ -216,6 +233,7 @@ body{
             flex-grow: 1;
             justify-content: space-around;
             flex-wrap: wrap;
+            row-gap: 15px;
             .card{
                width: 45%;
                max-width: 400px;
@@ -238,6 +256,9 @@ body{
                &:hover{
                    background-color: $bgGreen;
                    color: $white;
+                   a{
+                       color : $white;
+                   }
                }
                &:hover .info h3{
                    color: $lightgreen;
@@ -258,46 +279,47 @@ body{
     color: $bgGreen;
     }
 }
-#fifth_view{
-    text-align: center;
+// this is the review carousel styles 
+// #fifth_view{
+//     text-align: center;
    
-        .customer{
-            display: flex;
-            align-items: start;
-            justify-content: space-between;
-            width: 80%;
-            flex-grow: 1;
-            gap: 1rem;
-            margin: 0 auto;
-            color: $white;
-            padding: 2rem 0;
-            img{
-                display: block;
-                border-radius: 50%;
-                border: 2px solid $white;
-                display: block;
-                margin-bottom: 1rem;
-                max-width: 10vw;
-                border-radius: 50%;
-                border: 2px solid $white;
-            }
-            .user{
-                font-size: .8rem;
-            }
-            .info{
-                padding: 1rem;
-                max-width: 600px;
-                margin: 0 auto;
-                font-style: italic;
-            }
+//         .customer{
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             width: 80%;
+//             flex-grow: 1;
+//             gap: 1rem;
+//             margin: 0 auto;
+//             color: $white;
+//             padding: 2rem 0;
+            
+//             img{
+//                 display: block;
+//                 border-radius: 50%;
+//                 border: 2px solid $white;
+//                 display: block;
+//                 margin: 1rem auto;
+//                 max-width: 60%;
+//                 border-radius: 50%;
+//                 border: 2px solid $white;
+//             }
+//             .user{
+//                 font-size: .8rem;
+//             }
+//             .info{
+//                 padding: 1rem;
+//                 max-width: 600px;
+//                 font-style: italic;
+//             }
 
-        }
-    }
-    // next and prev for the carousel
-    .swiper-button-next:after, 
-    .swiper-button-prev:after{
-        color: white;
-    }
+//         }
+//     }
+//     // next and prev for the carousel
+//     .swiper-button-next:after, 
+//     .swiper-button-prev:after{
+//         color: white;
+//     }
 
 #sixth_view{
     @extend %general_padding ;
@@ -442,10 +464,10 @@ section#first_view.about{
             font-size: 4rem;
 
             }
-        h3{
+        p{
             margin: 0;
             margin-left: auto;
-
+            font-weight: bold;
         }
     }
 }
@@ -477,6 +499,7 @@ section#first_view.about{
         .info{
             margin: 2rem 0;
             color: $white;
+            font-weight: normal;
         }
     padding: 0 3rem;
         .code_design{
@@ -670,7 +693,7 @@ section#sec_view.expertise{
 }
 
 
-// EXPERIENCE MEDIA QUERY
+// EXPERTISE MEDIA QUERY
 
 @media screen and (max-width: 750px){
     section#first_view.experience{
@@ -679,6 +702,7 @@ section#sec_view.expertise{
         h1{
             font-size: 2rem;
             color: $white;
+            letter-spacing: normal;
         }
       }
     }
@@ -703,11 +727,21 @@ section#sec_view.expertise{
 // ALL BLOGS SECTION
 section#banner{
     height: 70vh;
-    background-image: url('../images/blogs.jpg');
     object-fit: cover;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: 0.2;
+    }
     h3{
         position: absolute;
         top: 5%;
@@ -819,13 +853,17 @@ section#banner.blogPost{
     h2{
         margin: 1rem 0 ;
     }
-    p{
+    p, li{
     line-height: 30px;
     }
+    
 }
 #sixth_view.blogPost{
     min-height: auto;
     background: $white;
+    img{
+        width : 60px;
+    }
 }
 .blogPost.form{
     background-color: $white;
@@ -837,7 +875,7 @@ section#banner.blogPost{
                 margin-bottom: 1.4rem;
                 text-align: center;
             }
-            padding: 1rem 1.5rem;
+            padding: 1rem 0;
             max-width: 1000px;
             margin: 0 auto;
             input{
@@ -863,7 +901,7 @@ section#banner.blogPost{
 #sixth_view.blogPost #author {
     margin: -100px auto;
     margin-bottom: .4rem;
-    max-width: 250px;
+    max-width: 220px;
     .profile{
         padding: .8rem;
         img{
@@ -871,4 +909,138 @@ section#banner.blogPost{
         }
     }
 }
+.blogPost.form{
+        padding: 2rem 1rem;
+}
+}
+
+// webdev services page
+
+section#first_view.webdev{
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    .nav-header{
+        padding: 2rem;
+    }
+    .content {
+        h1{
+            font-size: 4em;
+        }
+        align-items: start;
+        padding: 2rem;
+        margin: 0 auto;
+        p{
+            margin: 0 1rem;
+            text-align: start;
+        }
+    }
+}
+
+#more.webdev{
+    .big_t{
+        font-size: 1.5rem;
+    }
+    min-height: auto;
+    .code_design{
+        margin: 1rem auto;
+    }
+}
+#more2.webdev{
+    min-height: auto;
+    display: block;
+}
+@media screen and (max-width: 750px){
+    section#first_view.webdev{
+        .nav-header{
+            padding: 1rem;
+            font-size: .9rem;
+            margin-top: 2rem;
+        }
+        background-size: 80%;
+        .content {
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    section#first_view.webdev{
+        display: block;
+        background-position: right 80%;
+        .nav-header{padding: .5rem;}
+        .content{
+            padding: .5rem;
+            margin-top: 3rem;
+            h1{
+                font-size: 2rem;
+                letter-spacing: normal
+                ;
+            }
+            .info{
+                text-align: start;
+            }
+        }
+        }
+}
+
+
+// UI /UX section 
+.ux-design {
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    .card-box{
+        flex-basis: 30%;
+        // because the top boxes is a container with max-width : 1000px';
+        min-width: 300px;
+        margin: 1rem 0px;
+        background-color: white;
+        box-shadow: 0px 0px 5px black;
+        .image-box{
+        position : relative;
+        h3 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            display: flex;
+        }
+        p{
+            padding: .4rem 1rem;
+            margin: .2rem 0 !important;
+        }
+        .card-body{
+            padding: 1.5rem;
+        }
+    }    
+    }
+}
+#ux-companies.ux-design{
+    @extend %white_grid_lines;
+    padding: 2rem 1rem;
+    padding: 3em;
+    // is to keep up with the top section element with the same sixe padding
+
+    h2{
+        color: $white;
+    }
+    .boxes{
+        .card-box{
+            img{
+                height: auto;
+            }
+        }
+    }
 }

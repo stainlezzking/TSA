@@ -1,32 +1,28 @@
 
 cases = [
     {
-       a1 : "firstURL",
-       a2 : "secondURL",
-       img : "./assets/images/cases.jpg",
-       title : "Oflod Investment" ,
-       body : " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tempore impedit culpa provident ipsam aut eos quibusdam laudantium quasi voluptatibus?"
+       url : "https://temenosglobal.com",
+       img : "./assets/images/case.jpg",
+       title : "Temenos global" ,
+       body : "Temenos manages unique alternative investment solutions aside from our banking technologies that offer investors as well as banks, private and public firms the benefits of better diversification."
     },
     {
-        a1 : "firstURL",
-        a2 : "secondURL",
-        img : "./assets/images/cases.jpg",
-        title : "Oflod Investment" ,
-        body : " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tempore impedit culpa provident ipsam aut eos quibusdam laudantium quasi voluptatibus?"
+        url : "https://chukwuebukastanley.com",
+        img : "./assets/images/case2.png",
+        title : "Portfolio website" ,
+        body : "Chukwuebuka portfolio website is a unique way to showcase his work and let others know about himself. It’s like an evergreen platform for his projects, case studies, and information about himself. In addition, it’s one of the best ways to express your personality, experience, and capabilities"
      },
      {
-        a1 : "firstURL",
-        a2 : "secondURL",
-        img : "./assets/images/cases.jpg",
-        title : "Oflod Investment" ,
-        body : " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tempore impedit culpa provident ipsam aut eos quibusdam laudantium quasi voluptatibus?"
+        url : "https://www.chellinsgroup.com/",
+        img : "./assets/images/case3.png",
+        title : "Real Estate" ,
+        body : "Chellins Group Limited is a delivery-conscious conglomerate of companies, that are driven by a passionate purpose to assist our clients in fulfilling their dreams within these subsidiaries of Home Ownership (Chellins Properties), Building, and Civil Works (Chellins Engineering), and financial freedom (Chellins Partnership)"
      },
      {
-        a1 : "firstURL",
-        a2 : "secondURL",
-        img : "./assets/images/cases.jpg",
-        title : "Oflod Investment" ,
-        body : " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum tempore impedit culpa provident ipsam aut eos quibusdam laudantium quasi voluptatibus?"
+        url : "https://www.cenuelconstruction.com/",
+        img : "./assets/images/case4.png",
+        title : "Designs and construction" ,
+        body : "Cenuel Designs and Construction was established in 2018 and incoporated with CAC in 2021, the company is founded with the vision to share in the fast growth in construction industry in Nigeria."
      }
 ]
 
@@ -37,13 +33,13 @@ module.exports = cases.map(c=>{
     <div class="card_image">
         <img src="${c.img}" alt="" >
         <div class="image_hover">
-                <a href="${c.a2}"> view case</a>
+                <a href="${c.url}"> view case</a>
         </div>
     </div>
     <div class="card_body">
         <h3 class="orbitron py-1"> ${c.title}</h3>
         <p>
-        ${c.body}
+        ${c.body.slice(0,300)}...
         </p>
     </div>
 </div>

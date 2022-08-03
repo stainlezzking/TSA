@@ -7,11 +7,13 @@ module.exports = blogs.map(blog=>{
         <img src="${blog.url}" alt="" srcset="">
     </div>
         <div class="card-body">
-        <a href="#">
+        <a href="${blog.link}">
             <h3> ${blog.title}</h3>
             <p>
-               ${blog.body}
+               ${blog.body.slice(0,250)}...
+               <br>
             </p>
+            <p><a style="text-align:end; color: blue;" href="${blog.link}"> Read</a></p>
         </a>
         </div>
 </div>
