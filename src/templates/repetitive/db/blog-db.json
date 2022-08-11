@@ -1,6 +1,8 @@
 [
    {
     "url" : "./assets/images/schoolbanner.png",
+    "url1" : "./assets/images/schoolbanner-sm-300.png",
+    "url2" : "./assets/images/schoolbanner-md-600.png",
     "title" : "Benefits of having a school website",
     "body" : "It is easy to neglect your school website, but this would be a big mistake. Your website can accomplish so much for your school, your staff and your whole community. A website needs to not only look good and provide the basic information – it should also become an interactive hub for the community.",
     "link" : "./school-benefits.html"
@@ -8,12 +10,16 @@
 },
 {
     "url" : "./assets/images/branding.png",
+    "url1" : "./assets/images/branding-sm-300.png",
+    "url2" : "./assets/images/branding-md-600.png",
     "title" : "How good branding grows your business",
     "body" : "With creativity, skill and strategy, a brand can establish an identity that sets itself apart from the competition and sparks a connection with its audience. Branding is what gives you a reputation and, ultimately, a future.",
     "link" : "./good-business-brand.html"
 },
 {
     "url" : "./assets/images/onlinepresence.png",
+    "url1" : "./assets/images/onlinepresence-sm-300.png",
+    "url2" : "./assets/images/onlinepresence-md-600.png",
     "title" : "Why your businesses should have an online presence",
     "body" : "Never before has it been so important for businesses to connect and engage with current and potential customers, especially online. Having a digital presence for your business is vital to its success. A survey conducted by Salesforce found that customers rely on the research they conduct online before making a purchase or scheduling an appointment with a company for service.",
     "link" : "./online-presence.html"

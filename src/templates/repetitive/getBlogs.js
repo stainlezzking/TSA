@@ -2,9 +2,9 @@ const blogs = require("./db/blog-db.json")
 
 module.exports = blogs.map(blog=>{
     return(`
-    <div class="card">
+    <div class="card" id="blog-preview">
     <div class="card-image">
-        <img src="${blog.url}" alt="" srcset="">
+        <img src="${blog.url1}" alt="" srcset="">
     </div>
         <div class="card-body">
         <a href="${blog.link}">
