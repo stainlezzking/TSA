@@ -7,7 +7,7 @@ cases = [
        body : "Temenos manages unique alternative investment solutions aside from our banking technologies that offer investors as well as banks, private and public firms the benefits of better diversification."
     },
     {
-        url : "https://chukwuebukastanley.com",
+        url : "https://chukwuebukaazuka.web.app/",
         img : "./assets/images/case2.png",
         title : "Portfolio website" ,
         body : "Chukwuebuka portfolio website is a unique way to showcase his work and let others know about himself. It’s like an evergreen platform for his projects, case studies, and information about himself. In addition, it’s one of the best ways to express your personality, experience, and capabilities"
