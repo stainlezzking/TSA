@@ -9,14 +9,6 @@
 
 },
 {
-    "url" : "./assets/images/branding.png",
-    "url1" : "./assets/images/branding-sm-300.png",
-    "url2" : "./assets/images/branding-md-600.png",
-    "title" : "How good branding grows your business",
-    "body" : "With creativity, skill and strategy, a brand can establish an identity that sets itself apart from the competition and sparks a connection with its audience. Branding is what gives you a reputation and, ultimately, a future.",
-    "link" : "./good-business-brand.html"
-},
-{
     "url" : "./assets/images/onlinepresence.png",
     "url1" : "./assets/images/onlinepresence-sm-300.png",
     "url2" : "./assets/images/onlinepresence-md-600.png",

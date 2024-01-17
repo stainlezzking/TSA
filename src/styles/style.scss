@@ -118,7 +118,6 @@ body{
             font-size: 1.1em;
             line-height: 1.5rem;
             font-family: 'Lato', sans-serif;
-            text-align: center;
         }
     }
     .button_position{
@@ -235,6 +234,8 @@ body{
             justify-content: space-around;
             flex-wrap: wrap;
             row-gap: 15px;
+            margin: 0 auto;
+            max-width: 900px;
             .card{
                width: 45%;
                max-width: 400px;
@@ -391,20 +392,89 @@ body{
   
 }
 
-footer#seventh_view{
-    background-color: $bgGreen;
-    padding: 2rem;
-    color: $white;
-    h2{
-        font-size: 3em;
-        color: $white;
-        color: $lightgreen;
+#our_approach {
+    @extend %general_padding;
+    @extend %white_grid_lines;
+    color : $white;
+    .mw-800{
+        max-width: 800px !important;
+    }
+   .greendot::before{
+    width: 11px;
+    height: 11px;
+    position: relative;
+    color: black;
+   }
+}
+@media screen and (min-width:1200px){
+    .ms-800px-mn_900{
+        max-width: 1000px;
+    }
+}
 
+#mission{
+@extend %general_padding;
+    padding: 2rem 1em;
+    .mw_800px{
+        max-width: 800px   ;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .paragraph{
+    color: $white
+    }
+}
+
+#donate_view{
+    @extend %general_padding ;
+    @extend %white_grid_lines;
+    color: $white;
+
+    a.button{
+        margin: 1rem auto;
+        @include btn-big($white);
+
+        .bt_info{
+            display: none;
+        }
+        &:hover .bt_context{
+            display: none;
+        }
+        &:hover .bt_info{
+            display:  inline;
+        }
     }
     .content{
         display: flex;
+        align-items: center ;
+        justify-content: center;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+}
+
+footer#seventh_view{
+    background-color: $bgGreen;
+    padding: 2rem;
+    color:  #e5dbdb;
+    h2{
+        font-size: 3em;
+        color:  #e5dbdb;
+        color: $lightgreen;
+
+    }
+    span{
+        margin: 0 1rem;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
         padding: 2rem;
         color: darken($bgGreen, 10);
+        div{
+            flex-basis: 60%;
+        }
            h3{
                letter-spacing: 4px;
                color: $lightgreen;
@@ -414,13 +484,16 @@ footer#seventh_view{
                margin-right: 1rem;
            }
         p{
-            padding: .7rem 1.2rem;
+            // padding: .7rem 1.2rem;
             margin-top:2rem;
+        }
+        .donation p {
+            margin-top: 0px;
         }
         a{
             display: block;
             padding: .7rem 1.2rem;
-            color: $white;
+            color:  #e5dbdb;
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
@@ -428,6 +501,12 @@ footer#seventh_view{
         }
         h3{
             font-weight: bold;
+            font-family: 'orbitron';
+            font-size: 20px;
+        }
+        h4{
+            font-family: 'orbitron';
+            font-size: 20px;
         }
     }
 }
@@ -475,6 +554,7 @@ section#first_view.about{
 .greendot{
     position: relative;
     padding-left: 20px;
+    margin: 1.5rem 0px;
     &::before{
         content: "";
         width: 15px;
@@ -538,7 +618,6 @@ section#more2{
             }
         }
         p{
-            margin: 1.5rem 0px;
             &::before{
                 top: 0;
             }
@@ -592,6 +671,63 @@ section#more2{
     }
 }
 
+#faces{
+    @extend %white_grid_lines;
+    // min-height: 100vh;
+    // padding: 2rem;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ul.agents{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            flex-basis: 30%;
+            border: 2px solid #fff;
+            padding: 2rem;
+            margin: 0 auto;
+            margin-bottom: 1rem ;
+            h3{
+                color: #23ff00;
+                padding: .5rem 0;
+            }
+            p{
+                color: white;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:900px){
+    #faces{
+        ul.agents{
+            li{
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:500px){
+    #faces{
+        ul.agents{
+            li{
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+
 #contact-us{
     @extend %grid_lines ;
     color: darken($gray, 40);
@@ -643,7 +779,7 @@ section#more2{
         width: 100%;
         border-radius: 20px;
         height: 30vh;
-        padding: 1.4rem;
+        padding: 1rem;
     }
 
 }

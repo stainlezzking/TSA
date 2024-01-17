@@ -9,7 +9,7 @@ module.exports = blogs.map(blog=>{
         <div class="card-body">
         <a href="${blog.link}">
             <h3> ${blog.title}</h3>
-            <p>
+            <p class="paragraph">
                ${blog.body.slice(0,250)}...
                <br>
             </p>

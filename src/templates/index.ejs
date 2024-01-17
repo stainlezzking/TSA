@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
     <meta name="description" content="The Seven Apex is a top Web Development agency in Nigeria that builds website for businesses and individuals">
     <meta property="og:description" content="The Seven Apex, we build website for businesses and individuals and we manage brand designs">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- seo meta tags plus favicion -->
     <%= require('./repetitive/seo-tags.js') %>
     <!-- ######## -->
@@ -48,44 +49,64 @@
 
         <section id="first_view">
            
-            <div class="button_position">
+            <div class="button_position" data-aos="flip-right">
                 <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
             </div>
             <div class="content orbitron">
-                <h1> 7 APEX Studio</h1>
-                <p>
-                    Our services has a proven record of <span style="color: #198754;">83%</span> increase in business reach,
-                     turnover and commensurate profit. We are driven by a desire to give clients 
-                     maximum value for their branding investments,
-                     helping their businesses reach its full potential as a result.
+                <h1 data-aos="fade-in" data-aos-delay="200"> 7 APEX Studio</h1>
+                <p data-aos-id="duper" data-aos="fade-down" class="paragraph" data-aos-delay="800" class="paragraph">
+                    At The Seven Apex, we believe in the power of technology to drive positive change in the world. Founded by a group of NYSC corps members, we are a Non-profit organization, on a mission to bridge the digital divide in education. Our team is committed to creating and deploying innovative web applications that can revolutionize the way schools operate.
                 </p>
             </div>
         </section>
         <section id="forth_view">
-            <h2 class="mb-2 big_t"> Who Are we ?</h2>
-            <p>
-                We are The Seven Apex. <br>
-                A team of highly skilled creative developers, 
-                who offer solutions that give businesses online
-                presence and create a future-proof brand identity,
-                thereby increasing their reach and appeal
-                respectivelyely.
+            <h2 class="mb-2 big_t" data-aos="fade-left" data-aos-delay="400"> Who Are we ?</h2>
+            <p data-aos="fade-in" data-aos-delay="650" class="paragraph">
+             We are a dedicated group of National Youth Service Corps (NYSC) members who share a common vision for empowering schools and small businesses in Nigeria.
+             As part of our Community Development Service (CDS), we have joined forces to bring the digital age to the heart of education and commerce.
+              Our mission is simple: to empower schools and small businesses with <span style="color:green;"> FREE</span>, cutting-edge web applications. We believe that technology can transform education, and we're here to make it happen.
             </p>
         </section>
         <section id="third_view">
-            <div class="button_position">
-                <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1"> Get in touch</a>
+            <div class="button_position" data-aos="flip-left">
+                <a class="button" href="https://wa.me/message/EGWYLEIIIRY6I1" > Get in touch</a>
             </div>
             <div class="content">
                 <h2 class="title my-2"> Our Services</h2>
-                <div class="services">
+                <div class="services" data-aos="fade-down">
                  <!-- services inport -->
                  <%= require('./repetitive/services.js') %>
-                 <!-- #### -->
+                 <!-- #### -->  
                 </div>
                     
             </div>
         </section>
+
+        
+        <section id="our_approach">
+            <div class="ms-800px-mn_900">
+                <h2 class="title my-1"> Our Approach</h2>
+                <div class="paragraph">
+                    What sets us apart is our collaborative approach. We work closely with schools and small businesses, taking the time to understand their goals and challenges. Through open communication and continuous feedback, we ensure that the solutions we provide not only meet but exceed expectations.
+                </div>
+                <h2 class="title my-1"> Why work with us </h2>
+                <div class="paragraph mw-800">
+                    <p class="greendot">Youthful Innovation: Our team consists of NYSC core members, bringing fresh perspectives and innovative ideas to the table.</p>
+                    <p class="greendot">Social Impact: 7Apex is driven by a sense of responsibility to contribute meaningfully to the development of education and commerce in Nigeria.</p>
+                    <p class="greendot">Tailored Solutions: We understand that one size does not fit all. Our solutions are customized to suit the unique requirements of each client.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="mw_800px">
+                <h2 class="title my-1"> Our Mission</h2>
+                <div class="paragraph mb-2">
+                    At 7Apex, our mission is clear: to bridge the digital divide by providing schools and small businesses in Nigeria with bespoke websites and applications. We firmly believe that an online presence is not a luxury but a necessity in today's interconnected world. By offering our technical expertise, we aim to catalyze growth, enhance visibility, and foster efficiency for those who form the backbone of our communities.
+                </div>
+            </div>
+        </section>
+
         <section id="sec_view">
             <h2 class="title my-1"> Our Cases</h2>
 
@@ -98,78 +119,34 @@
                 see more cases
             </a>
         </section>
-<!-- section for Reviewws... muted this plus the carousel link and styles -->
-<!--         
-        <section id="fifth_view">
-            <h2 class="mb-1 title"> What are our clients saying?</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper ">
-                  <div class="swiper-slide">
-                        <div class="customer">
-                         <div>
-                            <img src="./assets/images/school.png" alt="" srcset="">
-                            <div class="user">
-                                <p> CNJOEONP</p>
-                                <p> CNONUEUPN </p>
-                            </div>
-                         </div>
-                            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-                        </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="customer">
-                     <div>
-                        <img src="./assets/images/school.png" alt="" srcset="">
-                        <div class="user">
-                            <p> CNJOEONP</p>
-                            <p> CNONUEUPN </p>
-                        </div>
-                     </div>
-                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-                    </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="customer">
-                 <div>
-                    <img src="./assets/images/school.png" alt="" srcset="">
-                    <div class="user">
-                        <p> CNJOEONP</p>
-                        <p> CNONUEUPN </p>
-                    </div>
-                 </div>
-                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="customer">
-             <div>
-                <img src="./assets/images/school.png" alt="" srcset="">
-                <div class="user">
-                    <p> CNJOEONP</p>
-                    <p> CNONUEUPN </p>
-                </div>
-             </div>
-                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum dolorem quia, perferendis pariatur reprehenderit saepe nihil sapiente tempora commodi!</p>
-            </div>
-        </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-        </section> -->
+
 <!-- ####### Reviews ending ####### -->
         <section id="sixth_view">
-            <div class="button_position">
-                <a href="https://wa.me/message/EGWYLEIIIRY6I1" class="button"> Get in touch </a>
+            <div class="button_position" data-aos="flip-right">
+                <a href="https://wa.me/message/EGWYLEIIIRY6I1" class="button" > Get in touch </a>
             </div>
             <h2 class="my-2 title"> Our blogs</h2>
-            <div class="blogs mt-1">
+            <div class="blogs mt-1" >
                 <!-- blogs section -->
                 <%= require('./repetitive/getBlogs.js') %>
                 <!-- blogs section end -->
             </div>
             <a href="./blogs.html" class="button nd">
-                View more blog post
+                View all blog posts
+            </a>
+        </section>
+        <section id="donate_view">
+            <h2 class="title my-1 " style="text-align: center;"> Donate to Our cause</h2>
+          
+            <a href="./expertise.html#sec_view" target="_blank" class="button" id="morecases">
+                <span class="bt_context">
+                    Support us.
+                </span>
+                <span class="bt_info" style="font-size: 20px;">
+                        Azuka Chukwuebuka Stanley <br>
+                        Kuda Bank <br>
+                        2016970379
+                </span>
             </a>
         </section>
 

@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode : 'production',
+    // mode : 'development',
     plugins : [new MiniCssExtractPlugin(),...plugs],
     output : {
         filename : 'main-[fullhash].js',
@@ -40,9 +41,12 @@ module.exports = {
             }
         ]
     },
-    // performance: {
-    //     assetFilter: function (assetFilename) {
-    //       return assetFilename.endsWith('.js');
-    //     }
-    // }
+    performance: {
+        // assetFilter: function (assetFilename) {
+        //   return assetFilename.endsWith('.js');
+        // }
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
 }

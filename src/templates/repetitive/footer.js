@@ -9,6 +9,11 @@ module.exports = `
     width : 40%;
     max-width : 60px;
 }
+@media screen and (min-width:900px){
+    #chat-wa{
+        max-width:100px;
+    }
+}
 #chat-wa img {
     max-width: 100%;
 }
@@ -17,14 +22,14 @@ module.exports = `
     <img src="./assets/images/chat.png" alt="chat button to reach the seven apex on whatsapp" />
 </a>
 <footer id="seventh_view">
-<h2 class="my-1 title "> Let's talk</h2>
+<h2 class="my-1 title"> Let's talk</h2>
 <div class="content">
     <div class="contact">
-        <a href="mailto:azukachukwuebuka07@gmail.com">
-            enquiries@thesevenapex.com
+        <a href="mailto:thesevenapex+enquiries@gmail.com">
+            thesevenapex+enquiries@gmai.com
         </a>
-        <a href="#"> +2349036442093</a>
-        <p> Star times Estate, Ago palace lagos, Nigeria.</p>
+        <a href="tel:09036442093"> +2349036442093</a>
+        <p> Ago palace lagos, Nigeria.</p>
     </div>
     <div class="fast-links">
         <h3> Quick Links</h3>
@@ -32,6 +37,38 @@ module.exports = `
         <a href="./about.html"> About us</a>
         <a href="./about.html#contact-us"> Contact us </a>
     </div>
+    <div class="donation" style="color: #e5dbdb;">
+        <h3 class="mb-1"> Support the team </h3>
+        <p class="mb-1 paragraph" > Your support can make a significant difference in our mission. By donating or contributing,
+         you're helping us continue our work and expand our impact. Every contribution, big or small,
+          brings us one step closer to making quality education accessible to all. </p>
+          <h4>
+          Azuka Chukwuebuka Stanley <br> Kuda Bank <br> 2016970379 
+          </h4>
+          </p>
+    </div>
 </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+
+AOS.init({
+disable: false, 
+startEvent: 'DOMContentLoaded', 
+initClassName: 'aos-init',
+animatedClassName: 'aos-animate', 
+useClassNames: false, 
+disableMutationObserver: false, 
+debounceDelay: 50, 
+throttleDelay: 99, 
+offset: 120,
+delay: 0, 
+duration: 400,
+easing: 'ease',
+once: true, 
+mirror: false,
+anchorPlacement: 'top-bottom',
+});
+ </script>
 `
