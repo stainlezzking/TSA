@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
-    "site": "tsa-net",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

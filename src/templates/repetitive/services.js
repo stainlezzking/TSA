@@ -42,7 +42,7 @@ let services = [
     }
 ]
 
-anims = ["fade-right", "fade-left"]
+anims = ["fade-down-right", "fade-down-left"]
 module.exports = services.map((service,index)=>{
     return (`
     <div class="card" data-aos="${anims[index]}" data-aos-delay="400">

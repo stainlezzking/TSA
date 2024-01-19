@@ -241,8 +241,10 @@ body{
                max-width: 400px;
                background-color: $gray;
                padding: 2em;
-               transition: background-color .2s ease-in, 
-               color .25s linear;
+               &.aos-animate{
+                      transition: background-color .2s ease-in, 
+                      color .25s linear;
+               }
                h3{
                    font-family: 'orbitron';
                }
