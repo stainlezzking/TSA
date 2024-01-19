@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "site" : "thesevenapex",
     "ignore": [
       "firebase.json",
       "**/.*",
