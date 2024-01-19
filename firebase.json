@@ -1,11 +1,15 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist",
     "site" : "thesevenapex",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "webpack-plugins.js",
+      "webpack.config.js",
+      "design/**",
+      "left"
     ]
   }
 }
