@@ -25,11 +25,10 @@ module.exports = `
 <h2 class="my-1 title"> Let's talk</h2>
 <div class="content">
     <div class="contact">
-        <a href="mailto:thesevenapex+enquiries@gmail.com">
-            thesevenapex+enquiries@gmai.com
+        <a href="mailto:azukachukwuebuka07+theseven@gmail.com">
+            azukachukwuebuka07+theseven@gmail.com
         </a>
-        <a href="tel:09036442093"> +2349036442093</a>
-        <p> Ago palace lagos, Nigeria.</p>
+        <p> lagos, Nigeria.</p>
     </div>
     <div class="fast-links">
         <h3> Quick Links</h3>
@@ -50,6 +49,12 @@ module.exports = `
 </div>
 </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    document.querySelector("#support").addEventListener("click", function(e){
+        document.getElementsByClassName("bt_context")[0].style.display = "none"
+        document.getElementsByClassName("bt_info")[0].style.display = "block"
+    })
+</script>
 <script>
 AOS.init();
 

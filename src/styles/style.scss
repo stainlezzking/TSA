@@ -161,11 +161,11 @@ body{
         justify-content: space-around;
         padding: 1rem 1rem;
         .card {
-            width: 45%;
-            max-width: 400px;
-            &:nth-child(2n){
-                margin-top: 5em;
-            }
+            width: 30%;
+            max-width: 200px;
+            // &:nth-child(2n){
+            //     margin-top: 5em;
+            // }
             .card_image{
                 position: relative;
                 .image_hover {
@@ -432,19 +432,17 @@ body{
     @extend %white_grid_lines;
     color: $white;
 
-    a.button{
+    .button{
         margin: 1rem auto;
         @include btn-big($white);
 
+        #support{
+            cursor: default;
+        }
         .bt_info{
             display: none;
         }
-        &:hover .bt_context{
-            display: none;
-        }
-        &:hover .bt_info{
-            display:  inline;
-        }
+      
     }
     .content{
         display: flex;

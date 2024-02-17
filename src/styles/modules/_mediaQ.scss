@@ -17,10 +17,11 @@
     }
     #sec_view{
         .cases_flex{
-            flex-direction: column;
+            align-items: center;
             .card{
                 margin: 1rem 0;
-                width: 100%;
+                width: 40%;
+                min-width: 150px;
                 max-width: 300px;
                 &:nth-child(2n){
                     align-self: end;
@@ -29,6 +30,7 @@
                 .card_body{
                     h3{
                         font-size: 16px;
+                        text-align: center;
                     }
                     p{
                         line-height: 1.5rem;
