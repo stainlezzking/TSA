@@ -160,57 +160,27 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 1rem 1rem;
+        margin: 0 auto;
+        max-width: 1000px;
         .card {
             width: 30%;
             max-width: 200px;
-            // &:nth-child(2n){
-            //     margin-top: 5em;
-            // }
-            .card_image{
-                position: relative;
-                .image_hover {
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    left: 0;
-                    top: 0;
-                    display: flex;
-                    align-items: end;
-                    justify-content: space-around;
-                    padding-bottom: 2rem;
-                    background-color: transparent;
-                    &:hover{
-                        background-color: rgba(0,0,0,.5);
-                    }
-                    a  {
-                        background: none;
-                        padding: .5rem 1rem;
-                        border-radius: 15px;
-                        border-color: $white;
+                .card_body{
+                    h3{
+                        letter-spacing: 1px;
                         color: $white;
-                        display: inline-block;
-                        text-decoration: none;
-                        border: 2px solid $white;
-                        transition: background-color .2s ease-in,
-                        color .15s linear  ;
-                        &:hover{
-                            background-color: $bgGreen;
-                        }
-                        }
-            }
-           
-            }
-            .card_body{
-                h3{
-                    letter-spacing: 1px;
-                    color: $white;
+                        font-size: .8em;
+                    }
                 }
-            }
-            img {
-                width: 100%;
-                display: block;
-
-            }
+                .card_image{
+                    width: 80%;
+                    max-width: 100px;
+                    img {
+                        width: 100%;
+                        display: block;
+        
+                    }
+                }
         }
     }
 }

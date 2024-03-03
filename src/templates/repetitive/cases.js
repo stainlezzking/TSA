@@ -37,10 +37,10 @@ module.exports = cases.map(c=>{
     <div class="card">
     <div class="card_image">
         <img src="${c.img}" alt="" >
+        </div>
         <div class="card_body">
             <h3 class="orbitron py-1 text-center"> ${c.title}</h3>
         </div>
-    </div>
     </div>
     `)
 }).join("")
