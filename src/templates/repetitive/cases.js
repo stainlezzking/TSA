@@ -1,12 +1,12 @@
 
 cases = [
-    // {
-    //    url : "https://temenosglobal.com",
-    //    img : "./assets/images/case.jpg",
-    //    title : "Temenos global" ,
-    //    body : "Temenos manages unique alternative investment solutions aside from our banking technologies that offer investors as well as banks, private and public firms the benefits of better diversification.",
-    //    anim : "fade-down-right"
-    // },
+    {
+       url : "https://www.studyhabitschool.com/",
+       img : "./assets/images/studyhabit.png",
+       title : "Study Habit" ,
+       body : "Temenos manages unique alternative investment solutions aside from our banking technologies that offer investors as well as banks, private and public firms the benefits of better diversification.",
+       anim : "fade-down-right"
+    },
     {
         url : "#",
         img : "./assets/images/citypride.png",
@@ -38,9 +38,9 @@ module.exports = cases.map(c=>{
     <div class="card_image">
         <img src="${c.img}" alt="" >
         </div>
-        <div class="card_body">
-            <h3 class="orbitron py-1 text-center"> ${c.title}</h3>
-        </div>
+        <a href="${c.url}" ${ c.url !== "#" ? 'target="_blank"': ''} class="card_body" style="text-decoration:none;">
+            <h3 class="orbitron py-1 text-center"> 🔗 ${c.title}</h3>
+        </a>
     </div>
     `)
 }).join("")

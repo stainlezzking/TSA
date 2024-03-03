@@ -159,6 +159,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: end;
         padding: 1rem 1rem;
         margin: 0 auto;
         max-width: 1000px;
@@ -166,6 +167,7 @@ body{
             width: 30%;
             max-width: 200px;
                 .card_body{
+                    text-align: center;
                     h3{
                         letter-spacing: 1px;
                         color: $white;
@@ -175,6 +177,7 @@ body{
                 .card_image{
                     width: 80%;
                     max-width: 100px;
+                    margin: 0 auto;
                     img {
                         width: 100%;
                         display: block;
